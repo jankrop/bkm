@@ -114,7 +114,7 @@ else:
     print("\033[31mNieprawidłowy wybór!\033[00m")
     exit()
 
-print("\033[43m", line, "→", list(stops.keys())[0], "\033[00m", stop["name"])
+print("\033[43m", line, "→", list(stops.keys())[stop_choice[0] == "b"], "\033[00m", stop["name"])
 print()
 print(
     "\033[100m     dni robocze     \033[44m       soboty        \033[42m  niedziele i święta  \033[00m"
